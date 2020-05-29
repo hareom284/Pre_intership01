@@ -2,6 +2,11 @@
 {
     margin: 0;
     padding: 0;
+    
+}
+html
+{
+  overflow-x: hidden;
 }
 
 .header
@@ -75,14 +80,38 @@
 }
 .slider
 {
-    
+    background-image: url(images/sliderbackground.jpg);
     height: 490px;
     background-color: violet;
     
 }
 
 /*slider inside box*/
+.box 
+{ background-color: black;
+  opacity: 40%;
+  width: 70%;
+  height: 400px;
+  margin-left: 19%;
+  margin-top: -700px;
 
+  display: flex;
+}
+.box .leftsite
+{ 
+  
+  width: 40%;
+}
+.text
+{ background-color: black;
+  padding-top: 100px;
+  padding-right: 10px;
+  line-height: 40px;
+  text-indent: 4px;
+  text-align: justify;
+  color: white;
+  width: 70%;
+}
 .cardsection
 {
     width: 100%;
@@ -235,10 +264,7 @@
     width: 18%;
   }
   /*ytu event */
-  .updatenews
-  {
-   
-  }
+  
   .cardnews1
   { 
     display: flex;
@@ -264,7 +290,27 @@
   }
   footer
   { margin-top: 200px;
+    margin-left: 0;
+    margin-right: 0;
     width: 100%;
-    height: 300px;
-    background-color: chartreuse;
+    height: 240px;
+    border-radius: 30px;
+    background-color: #5E2750;
+    color: green;
+  }
+  .footer
+  {
+    display: flex;
+  }
+  .footercolumn
+  { 
+    width: 24%;
+    /*border: 2px solid fuchsia;*/
+    border-radius: 20px;
+    margin-top: 30px;
+  }
+  footer .right
+  {
+   margin-left: 100px;
+   margin-top: -70px;
   }
