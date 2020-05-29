@@ -1,0 +1,316 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    
+}
+html
+{
+  overflow-x: hidden;
+}
+
+.header
+{
+    /*position: fixed;*/
+    width: 100%;
+}
+/*for red color*/
+.first
+{
+    width: 100%;
+    height: 4px;
+    margin-top: -18px;
+    background-color: red;
+    color:rosybrown;
+}
+/*for alumi links*/
+.second
+{
+    width: 100%;
+    height: 40px;
+    margin-top:0px ;
+    background-color: rosybrown;
+    color: rosybrown;
+    
+    
+
+}
+/* alumi link colors*/
+.second a{
+    color: wheat;
+    text-decoration: none;
+    font-size: 17px;
+    
+    
+}
+/*link aulimi position*/
+.linkalumi
+{
+  text-align: right;
+  padding-right: 100px;
+  padding-top: 10px;
+}
+/*for logo and headline for ytc site*/
+.headline
+{
+ width: 100%;
+ height: 120px;
+ background-color: #ffffff;
+ color: seagreen;
+}
+/*nav section */
+.nav
+{
+    width: 100%;
+    height: 40px;
+    background-color: sienna;
+}
+/*nav's links section design*/
+.nav a 
+{
+    text-decoration: none;
+    text-align: justify;
+    color: white;
+    font-size: 14px;
+}
+.navlinksection
+{
+    padding-top: 10px;
+    padding-left: 100px;
+}
+.slider
+{
+    background-image: url(images/sliderbackground.jpg);
+    height: 490px;
+    background-color: violet;
+    
+}
+
+/*slider inside box*/
+.box 
+{ background-color: black;
+  opacity: 40%;
+  width: 70%;
+  height: 400px;
+  margin-left: 19%;
+  margin-top: -700px;
+
+  display: flex;
+}
+.box .leftsite
+{ 
+  
+  width: 40%;
+}
+.text
+{ background-color: black;
+  padding-top: 100px;
+  padding-right: 10px;
+  line-height: 40px;
+  text-indent: 4px;
+  text-align: justify;
+  color: white;
+  width: 70%;
+}
+.cardsection
+{
+    width: 100%;
+    height: 2200px;
+    margin-top: 527px;
+    
+    
+    padding-left: 30px;
+    position: relative;
+}
+/*card section*/
+/* Float four columns side by side */
+.column {
+    float: left;
+    width: 30%;
+    padding: 0 10px;
+    margin-top: 90px;
+
+  }
+  
+  /* Remove extra left and right margins, due to padding */
+  .row {margin: 0 -5px;}
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive columns */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+  
+  /* Style the counter cards */
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: justify;
+    background-color: #f1f1f1;
+    text-indent: 20px;
+    line-height: 24px;
+    height: 220px;
+    width: 240px;border-radius: 12px;
+
+  }
+  /*for card's button style*/
+  button a
+  {
+    border: 2px solid #f1f1f1;
+    width: 40px;
+    height: 10px;
+    border-radius: 7px;
+    margin-right: -400px;
+    padding:4px;
+  
+    
+    text-decoration: none;
+  }
+  /*left column for rector image*/
+  .rectormessage
+  {
+   display: flex;
+  }
+  .leftcolumn
+  { margin-left: 200px;
+    margin-top: 100px;
+    width: 40%;
+  }
+  /*right column for rector message*/
+  .rightcolumn
+  {
+    margin-top: 100px;
+    margin-left: 20px;
+    line-height: 30px;
+    margin-right:260px ;
+    text-align: justify;
+
+  }
+  .ytuevent
+  {
+    margin-top: 100px;
+    margin-left: 100px;
+    display: flex;
+  }
+  .image1
+  {
+  
+   width: 24%;
+  }
+  .image2
+  {
+    width: 24%;
+  }
+  .image3
+  {
+   width: 24%;
+  }
+  .image4
+  {
+   width: 24%;
+  }
+  .welcometoytu
+  {
+    padding-top: 200px;
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+  /*image section*/
+  .section
+  {
+    background-image: url(images/ytusection.jpg);
+    width: 100%;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+  }
+  .publish
+  { padding-left: 10%;
+    border: 2px solid red;
+    height: 100px;
+    margin-top: 40px;
+    background-color:black;
+    opacity: 40%;
+    width: 18%;
+  }
+  .lecture
+  {
+    padding-left: 10%;
+    border: 2px solid red;
+    height: 100px;
+    margin-top: 40px;
+    background-color:black;
+    opacity: 40%;
+    width: 18%;
+  }
+  .entroll
+  { padding-left: 10%;
+    border: 2px solid red;
+    height: 100px;
+    margin-top: 40px;
+    background-color:black;
+    opacity: 40%;
+    width: 18%;
+  }
+  /*ytu event */
+  
+  .cardnews1
+  { 
+    display: flex;
+    padding-left: 100px;
+    
+  }
+  .cardnews2
+  {
+    display: flex;
+    padding-left: 100px;
+  }
+  
+  .hello2
+  { 
+    width: 24%;
+    height: 200px;
+  }
+  
+  .hello2 img
+  {
+    border-radius: 20px;
+    
+  }
+  footer
+  { margin-top: 200px;
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+    height: 240px;
+    border-radius: 30px;
+    background-color: #5E2750;
+    color: green;
+  }
+  .footer
+  {
+    display: flex;
+  }
+  .footercolumn
+  { 
+    width: 24%;
+    /*border: 2px solid fuchsia;*/
+    border-radius: 20px;
+    margin-top: 30px;
+  }
+  footer .right
+  {
+   margin-left: 100px;
+   margin-top: -70px;
+  }

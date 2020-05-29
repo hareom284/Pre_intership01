@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My page</title>
+        <style>
+            .navbar
+            {
+                background-color: black;
+                height:50px;
+                width:100%;
+                position:fixed;
+                top:0;
+                left: 0;
+            }
+            a{
+                
+                display: block;
+                color:blue;
+                text-align: center;
+                padding: 14px 16px;
+                float: left;
+                text-decoration: none;}
+
+            .leftmenu{
+                float:left;
+                padding-left:50px;
+               
+            }
+            .rightmenu
+            {
+                float:right;
+                
+                
+            }
+            .header
+            {
+                padding-top: 50px;
+            }
+            .content{
+                display:flex;
+                padding:0 50px 0 50px;
+            }
+            .left{
+                width:50%;
+                padding-left: 20px;
+                padding-top:50px;
+                text-align: center;
+            }
+            .right{
+                width: 50%;
+                text-align: center;
+                padding-top:50px;
+            }
+            .col1 .col2 .col3 .col4
+            {
+                width:25%;
+                text-align: center;
+            }
+            .contact
+            {
+                
+               display:flex; 
+            }
+            .address
+            {
+                padding-left:50px;
+               
+                text-align: left;
+                width:30%;
+            }
+            .input
+            {
+                padding:8px;
+                display:block;
+                border:none;
+                border-bottom:1px solid #ccc;
+                width:50%;
+                
+            }
+            .form
+            {
+                width:70%;
+                float:right;
+            }
+            .button
+            {
+                text-align: right;
+                margin-left:300px;                
+                margin-bottom: 100px;
+                background-color: teal;
+                color: white;
+                
+            }
+           
+            .footer
+            {
+                clear:both;
+                background-color: black;
+                color:white;
+                text-align: center;
+                width:100%;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <div class="navbar">
+                <div class="leftmenu">
+                    <a href="#">MyPage</a>
+                </div>
+                <div class="rightmenu " >
+                    <a href="#" >Home</a>
+                    <a href="#" >About</a>
+                    <a href="#">Contact</a>
+                </div>
+            </div> 
+            <div class="header">
+                <img src="html.jpg" width="1500px" height="500px">
+            </div>
+            <div class="content">
+                <div class="left">
+                    <img src="img1.png" width="500px">
+                </div>
+                <div class="right">
+                    <h2> Pre_Intern 01</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis, sequi quam? Fugiat nemo quo facilis repellendus harum ex. Quasi eum expedita recusandae error odit asperiores saepe assumenda dolore tenetur incidunt.</p>
+                </div>
+            </div>
+            <div class="content">
+                
+                <div class="col1">
+                    <h2> Pre_Intern 01</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis, sequi quam? Fugiat nemo quo facilis repellendus harum ex. Quasi eum expedita recusandae error odit asperiores saepe assumenda dolore tenetur incidunt.</p>
+                </div>
+                <div class="col2">
+                    <img src="img2.png" width="500px">
+                </div>
+                <div class="col3">
+                    <h2> Pre_Intern 02</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis, sequi quam? Fugiat nemo quo facilis repellendus harum ex. Quasi eum expedita recusandae error odit asperiores saepe assumenda dolore tenetur incidunt.</p>
+                </div>
+                <div class="col4">
+                    <img src="img2.png" width="500px">
+                </div>
+            </div>
+            
+            <div class="contact">
+               <div class="address">
+                   <p><h2>Contact US</h2></p>
+                  <p>Email: <span>admin@preintern.com</span> <br></p> 
+                  <p>Phone No: <span>0954444678</span><br></p> 
+                   <p>Address: <span> Mandalay</span><br></p>
+                   <p>Web Site: <span> www.google.com</span><br></p>
+
+               </div> 
+               <div class="form">
+                <h4>Drop the message you want to inquiry! We will contact you soon.</h4>
+                <form>
+                    <p><input class="input" type="text" placeholder="Name" ></p>
+                    <p><input class="input" type="text" placeholder="Phone number" ></p>
+                    <p><input class="input" type="text" placeholder="Email" ></p>
+                    <p><input class="input" type="text" placeholder="Message \ Special requirements" ></p>
+                    <p><button class="button" type="submit">SEND MESSAGE</button></p>
+                </form>
+            </div>
+            
+            </div>
+            
+            <div class="footer">
+                Copyright@2020
+            </div>
+        </div>
+        
+    </body>
+</html>
