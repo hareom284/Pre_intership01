@@ -86,9 +86,9 @@
 .cardsection
 {
     width: 100%;
-    height: 1700px;
+    height: 2200px;
     margin-top: 527px;
-    border: 2px solid rebeccapurple;
+    
     
     padding-left: 30px;
     position: relative;
@@ -192,7 +192,79 @@
   }
   .welcometoytu
   {
-
+    padding-top: 200px;
     margin-left: 200px;
     margin-right: 200px;
+  }
+  /*image section*/
+  .section
+  {
+    background-image: url(images/ytusection.jpg);
+    width: 100%;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+  }
+  .publish
+  { padding-left: 10%;
+    border: 2px solid red;
+    height: 100px;
+    margin-top: 40px;
+    background-color:black;
+    opacity: 40%;
+    width: 18%;
+  }
+  .lecture
+  {
+    padding-left: 10%;
+    border: 2px solid red;
+    height: 100px;
+    margin-top: 40px;
+    background-color:black;
+    opacity: 40%;
+    width: 18%;
+  }
+  .entroll
+  { padding-left: 10%;
+    border: 2px solid red;
+    height: 100px;
+    margin-top: 40px;
+    background-color:black;
+    opacity: 40%;
+    width: 18%;
+  }
+  /*ytu event */
+  .updatenews
+  {
+   
+  }
+  .cardnews1
+  { 
+    display: flex;
+    padding-left: 100px;
+    
+  }
+  .cardnews2
+  {
+    display: flex;
+    padding-left: 100px;
+  }
+  
+  .hello2
+  { 
+    width: 24%;
+    height: 200px;
+  }
+  
+  .hello2 img
+  {
+    border-radius: 20px;
+    
+  }
+  footer
+  { margin-top: 200px;
+    width: 100%;
+    height: 300px;
+    background-color: chartreuse;
   }
