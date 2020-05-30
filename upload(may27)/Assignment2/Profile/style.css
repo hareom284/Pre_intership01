@@ -1,0 +1,12 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+.first
+{
+    background-color: #69655e;
+    /* background-color: brown; */
+    width: 100%;
+    height: 140px;
+}
