@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>Test Print</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            @media print{
+                .screenonly{
+                    display:none;
+                }
+                
+            }
+         @media (min-width: 600px){
+            h2::before{
+                content:"Welcome to Responsive Design (PreIntern)"            }
+         }
+         
+        @media (max-width: 599px)
+        {
+            h2::before{
+                content:"Welcome to our group"
+            }
+        }
+        
+        @media (min-width:600px)
+        {
+            body{
+                background-color: red;
+            }
+        }
+        
+        </style>
+    </head>
+    <body>
+        <h2></h2>
+        <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate at iure pariatur fugit, vero, dolores alias ea nulla voluptates, in quaerat quia corporis sequi excepturi doloribus perferendis tempore? Atque, at.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente corrupti exercitationem veritatis sint quo? Voluptates ad illum adipisci sequi inventore neque labore facilis! Minus reprehenderit, praesentium doloribus dicta quis dolores.</p>
+        <p class="screenonly">This is testing.</p>
+    </body>
+</html>

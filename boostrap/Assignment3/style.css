@@ -1,0 +1,24 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+.headsection
+{
+    margin-top: 10px;
+    
+}
+
+
+div ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.row > div 
+{
+    margin-left: 10%;
+    margin-right: 10%;
+    border: 2px solid royalblue;
+    height: auto;
+}
