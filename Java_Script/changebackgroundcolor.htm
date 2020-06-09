@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Background Color</title>
+    <script>
+        document.addEventListener('DOMContentLoaded',function()
+        {
+            document.querySelector('#but1').onclick=function()
+            {
+                document.querySelector('body').style.backgroundColor='cadetblue';
+            };
+            document.querySelector('#but2').onclick=function()
+            {
+                document.querySelector('body').style.backgroundColor='fuchsia';
+            };
+            document.querySelector('#but3').onclick=function()
+            {
+                document.querySelector('body').style.backgroundColor='slateblue';
+            };
+
+        })
+    </script>
+</head>
+<body>
+    <h1 style="text-align:center">Pre_internship01</h1>
+    <button style="background-color: cadetblue;background-image: repeating-radial-gradient(red, yellow 10%, green 15%);" id='but1'>Cadetblue</button>
+    <button style="background-color: fuchsia;" id='but2'>Fuchsia</button>
+    <button style="background-color: slateblue;" id='but3'>Slateblue</button>
+</body>
+</html>

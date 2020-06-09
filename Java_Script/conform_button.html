@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conform Button</title>
+    <script>
+        function comform()
+        {
+        var result= confirm("Press Okay to visit my facebook account");
+        if (result==true)
+        {
+            window.open('https://www.facebook.com/profile.php?id=100024209373096');
+        }
+        else
+        {
+            alert("Nothing happend because you clicked cancel");
+        }
+        }
+
+    </script>
+</head>
+<body>
+    <input type="button" value="button" onclick="comform()">
+</body>
+</html>

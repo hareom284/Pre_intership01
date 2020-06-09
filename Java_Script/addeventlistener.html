@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Event Listener Example</title>
+    <script>
+     document.addEventListener('DOMContentLoaded',function()
+     {
+         document.querySelector('#form').onsubmit=function()
+         {
+             var name=document.querySelector('#name').value;
+             alert(name);
+         }
+     })
+        
+        
+    </script>
+</head>
+<body>
+    
+    <form id="form">
+    <input type="text" id="name">
+    <input type="submit">
+    </form>
+</body>
+</html>
