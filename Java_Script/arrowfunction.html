@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Function</title>
+    <script>
+        document.addEventListener('DOMContentLoaded', ()=>
+        {
+            document.querySelectorAll('.colors').forEach(button=>
+            { 
+               button.onclick= ()=>
+                {
+                document.querySelector('body').style.backgroundColor=button.dataset.color;
+                };
+            
+            });
+        });
+    </script>
+</head>
+<body>
+    <button class="colors" data-color="red">Red</button>
+    <button class="colors" data-color="green">Green</button>
+    <button class="colors" data-color="blue">Blue</button>
+</body>
+</html>

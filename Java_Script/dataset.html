@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Background Color</title>
+    <script>
+        document.addEventListener('DOMContentLoaded',function()
+        {
+            document.querySelectorAll('.colors').forEach(function(button)
+            {
+                button.onclick = function()
+                {
+                  document.querySelector('#chan').style.color=button.dataset.color;
+                };
+            });
+                
+
+       });
+    </script>
+</head>
+<body>
+    <h1 style="text-align:center" id="chan">Pre_internship01</h1>
+    <button style="background-color: blueviolet;" class="colors" data-color="red">Cadetblue</button>
+    <button style="background-color: fuchsia;" class="colors" data-color="green">Fuchsia</button>
+    <button style="background-color: slateblue;" class="colors" data-color="blue">Slateblue</button>
+</body>
+</html>
