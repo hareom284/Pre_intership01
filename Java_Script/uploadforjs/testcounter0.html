@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+
+            let counter = 0;
+
+            function count() {
+                counter++;
+                document.querySelector('#counter').innerHTML = counter;
+                console.log(counter);
+               
+            }
+
+        </script>
+        <title>Pre Intern Group</title>
+    </head>
+    <body>
+        <h1 id="counter">0</h1>
+        <button onclick="count()">Count me!</button>
+    </body>
+</html>

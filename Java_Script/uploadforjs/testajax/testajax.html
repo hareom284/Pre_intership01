@@ -1,0 +1,165 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                    </button>
+      <a class="navbar-brand" href="#">Our Page</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+    <ul class="nav navbar-nav navbar-right admin-menu">
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Exam<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+            <li><a href="addExam.php">Add Exam</a></li>
+            <li><a href="viewExam.php">View Exam</a></li>
+            </ul>
+        </li>
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Mark<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+            <li><a href="addMark.php">Add Mark</a></li>
+            <li><a href="viewMark.php">View Mark</a></li>
+            </ul>
+        </li>
+       <li class='dropdown'><a href='index.php'>Log Out</a></li>
+        
+    </ul>
+   
+    </div>
+  </div>
+</nav>
+<br><br><br>
+  
+<div class="container">
+
+
+               <div class="container">
+  
+    </div>
+    
+                <div class="span10 offset1">
+                    <div class="row">
+                       <center> <h3>Add Student Marks!</h3></center>
+                    </div>
+                    
+                    <form class="form-horizontal" method="post">
+                    
+                    
+                     <div class="form-group">
+                    <label class="control-label col-md-4">Year</label>                    
+                    <select name="year" class="form-control form-control-inline col-md-4" >
+						<option value="first" >First Year</option>
+						<option value="second" >Second Year</option>
+						<option value="third">Third Year</option>
+						<option value="fourth">Fourth Year</option>
+						<option value="fifth">Fifth Year</option>
+                        <option value="final">Final Year</option>
+					</select>
+                
+                </div>
+                <div class="form-group">
+                <label class="control-label col-md-4">Semester</label>
+                    <select name="semester" class="form-control form-control-inline col-md-4">
+						<option value="fsemester" >First Semester</option>
+						<option value="ssemester" >Second Semester</option>
+						
+					</select>
+              </div>
+                
+                <div class="form-group">
+                <label class="control-label col-md-4">Exam Type</label>
+                <div class="controls" >
+              <select name="exams" id="getExam" class="form-control form-control-inline col-md-4">
+						<option value="tuto" >Tutorial</option>
+						<option value="practical" >Practical</option>
+						<option value="exam" >Exam</option>
+					</select>
+                </div>
+              </div>
+                <div class="form-group ">
+                        <label class="control-label col-md-4">Exam Title.</label>
+                        <div class="controls">
+                        <select name="etitle" id="etitle" class="form-control form-control-inline col-md-4">
+                    
+                            </select>
+                            
+                        </div>
+                </div>
+
+                      
+                
+                      
+                      <div class="form-actions col-md-12">
+                          <button type="submit" class="btn btn-success">Update</button>
+                          <a class="btn btn-primary" href="login.php">Back</a>
+                        </div>
+                    </form>
+
+
+                  
+                   
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,192L48,186.7C96,181,192,171,288,176C384,181,480,203,576,218.7C672,235,768,245,864,229.3C960,213,1056,171,1152,133.3C1248,96,1344,64,1392,48L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z" id="ID"></path></svg>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.1.1/gsap.min.js" integrity="sha256-cyEXrJKjO3YNkpCjPxVBdi7pRJ3EF+okm1oN9Qc4rRY=" crossorigin="anonymous"></script>
+                <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+                <script src="http://wit2020-user14.webstarterz.com/js/wavify.js"></script>
+                <script src="http://wit2020-user14.webstarterz.com/js/jquery.wavify.js"></script>
+                    <script type="text/javascript">
+                  var myWave = $('#ID').wavify({
+                  height: 160,
+                  bones: 6,
+                  amplitude: 40,
+                  color: '#85B1D6',   //#71B2D0
+                  speed: .25,
+                });
+                </script>
+                
+    </div> <!-- /container -->
+    <script>
+$(document).ready(function(){
+
+$('#getExam').on('change', function () {
+
+    var selectexam = $(this).val();
+    var result= [];
+    $('#etitle').empty();
+    $.ajax({
+        type: "POST",
+        url: "submitData.php",
+        // dataType: 'json',
+        data: {'selectexam': selectexam },
+        success: function (json) {
+            
+            console.log(json);
+            $('#etitle').append(json);
+            
+           
+        }
+    });
+});
+
+}); 
+
+
+</script>
+
+</body>
+</html>

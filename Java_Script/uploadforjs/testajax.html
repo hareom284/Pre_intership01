@@ -1,0 +1,153 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                    </button>
+      <a class="navbar-brand" href="#">Teacher Page</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+    <ul class="nav navbar-nav navbar-right admin-menu">
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Exam<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+            <li><a href="addExam.php">Add Exam</a></li>
+            <li><a href="viewExam.php">View Exam</a></li>
+            </ul>
+        </li>
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Mark<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+            <li><a href="addMark.php">Add Mark</a></li>
+            <li><a href="viewMark.php">View Mark</a></li>
+            </ul>
+        </li>
+       <li class='dropdown'><a href='index.php'>Log Out</a></li>
+        
+    </ul>
+   
+    </div>
+  </div>
+</nav>
+<br><br><br>
+  
+<div class="container">
+
+
+               <div class="container">
+  <h3>Welcome to Student Mark Management System</h3>
+  
+    </div>
+    
+                <div class="span10 offset1">
+                    <div class="row">
+                       <center> <h3>Add Student Marks!</h3></center>
+                    </div>
+                    <center>
+                    <form class="form-horizontal" action="editMark.php" method="post">
+                    <input type="hidden" name="new" value="1" />
+                    <input name="id" type="hidden" value="<?php echo $id;?>" />
+                    <input name="exam" type="hidden" value="<?php echo $exam_type;?>" />
+                    
+                      <div class="form-group">
+                    <label class="control-label col-md-6">Year</label>
+                    <div class="controls">
+                    <select name="year" class="form-control form-control-inline col-md-6" >
+						<option value="first" >First Year</option>
+						<option value="second" >Second Year</option>
+						<option value="third">Third Year</option>
+						<option value="fourth">Fourth Year</option>
+						<option value="fifth">Fifth Year</option>
+                        <option value="final">Final Year</option>
+					</select>
+                </div>
+                </div>
+                <div class="form-group">
+                <label class="control-label col-md-6">Semester</label>
+                <div class="controls">
+                    <select name="semester" class="form-control form-control-inline col-md-6">
+						<option value="fsemester" >First Semester</option>
+						<option value="ssemester" >Second Semester</option>
+						
+					</select>
+                </div>
+              </div>
+                
+                <div class="form-group">
+                <label class="control-label col-md-6">Exam Type</label>
+                <div class="controls" >
+                    <select name="exams" id="getExam" class="form-control form-control-inline col-md-6">
+						<option value="tuto" >Tutorial</option>
+						<option value="practical" >Practical</option>
+						<option value="exam" >Exam</option>
+					</select>
+                </div>
+              </div>
+                <div class="form-group ">
+                        <label class="control-label col-md-6">Exam Title.</label>
+                        <div class="controls">
+                            <input name="etitle" id="etitle" type="text" class="form-control form-control-inline col-md-6" placeholder="Exam Title" value="<?php echo $exam_title;?>">
+                            
+                        </div>
+                </div>
+
+                      
+                
+                      
+                      <div class="form-actions col-md-12">
+                          <button type="submit" class="btn btn-success">Update</button>
+                          <a class="btn btn-primary" href="login.php">Back</a>
+                        </div>
+                    </form>
+                  </center>
+                   
+                </div>
+                 
+    </div> <!-- /container -->
+    <script>
+$(document).ready(function(){
+
+$('#getExam').on('change', function () {
+
+    var selectexam = $(this).val();
+    var result= [];
+    $('#etitle').empty();
+    $.ajax({
+        type: "POST",
+        url: "submitData",
+        // dataType: 'json',
+        data: {'selectexam': selectexam },
+        success: function (json) {
+            
+            console.log(json);
+            $('#etitle').append(json);
+            
+           
+        }
+    });
+});
+
+}); 
+
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+
+                document.querySelector('#todo-list').onsubmit = () => {
+
+                    const li = document.createElement('li');
+                    li.innerHTML = document.querySelector('#task').value;
+
+                    document.querySelector('#list').append(li);
+
+                    document.querySelector('#task').value = '';
+
+                    return false;
+                };
+
+            });
+        </script>
+        <title>PreIntern Group</title>
+    </head>
+    <body>
+        
+       
+        <form id="todo-list">
+            <input id="task" autocomplete="off" autofocus placeholder="Add todo-task" type="text">
+            <input type="submit">
+        </form>
+        <h1>To Do List</h1>
+        <ul id="list" type="circle">
+        </ul>
+    </body>
+</html>

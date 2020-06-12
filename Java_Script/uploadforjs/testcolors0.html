@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {                
+                document.querySelector('#red').onclick = function() {
+                    document.querySelector('#red').style.background='red';
+                };                
+                document.querySelector('#yellow').onclick = function() {
+                    document.querySelector('#yellow').style.background = 'yellow';
+                };                
+                document.querySelector('#green').onclick = function() {
+                    document.querySelector('#green').style.background = 'green';
+                };
+            });
+        </script>
+        <title>My Website</title>
+    </head>
+    <body>
+        
+        <button id="red">Red</button>
+        <button id="yellow">Yellow</button>
+        <button id="green">Green</button>
+    </body>
+</html>
