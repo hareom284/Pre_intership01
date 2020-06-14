@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Head Color</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+ <script>
+     document.addEventListener('change',()=>
+     {  var text =document.getElementById('example').value;
+        document.querySelector('#h1').style.color=text;
+        
+
+     });
+ </script>
+</head>
+<body>
+    <div class="container mt-4">
+    <p class="h1" id="h1">Yo!Warmly Welcome to Our Pre_intership Group</p>
+    <div class="form-group" style="width: 200px;">
+        <label for="exampleFormControlSelect2">Select the color</label>
+        <select  class="form-control opt" id="example">
+            <option class="change" value="green">green</option>
+            <option class="change" value="blue">blue</option>
+            <option class="change" value="yellow">yellow</option>
+            <option class="change" value="pink">pink</option>
+            <option class="change" value="red">red</option>
+        </select>
+      </div>
+      </div>
+</body>
+</html>

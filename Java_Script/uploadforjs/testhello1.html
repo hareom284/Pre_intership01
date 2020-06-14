@@ -2,11 +2,11 @@
 <html>
     <head>
         <script>
-            document.addEventListener('DOMContentLoaded', function() {
-                document.querySelector('#form').onsubmit = function() {
+            document.addEventListener('submit', function() {
+                
                     const name = document.querySelector('#name').value;
                     alert(`Hello ${name} How are you`);
-                };
+            
             });
         </script>
         <title>My Website</title>

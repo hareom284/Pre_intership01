@@ -7,11 +7,11 @@
     <script>
         document.addEventListener('DOMContentLoaded', ()=>
         {
-            document.querySelectorAll('.colors').forEach(button=>
+            document.querySelectorAll('.colors').forEach(()=>
             { 
                button.onclick= ()=>
                 {
-                document.querySelector('body').style.backgroundColor=button.dataset.color;
+                document.querySelector('body').style.backgroundColor=option.dataset.color;
                 };
             
             });
@@ -19,8 +19,10 @@
     </script>
 </head>
 <body>
-    <button class="colors" data-color="red">Red</button>
-    <button class="colors" data-color="green">Green</button>
-    <button class="colors" data-color="blue">Blue</button>
+    <select><
+    <option class="colors" data-color="red">Red</option>
+    <option class="colors" data-color="green">Green</option>
+    <option class="colors" data-color="blue">Blue</option>
+    </select>
 </body>
 </html>
