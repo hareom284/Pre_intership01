@@ -2,18 +2,23 @@
 <html>
     <head>
         <script>
+                
             document.addEventListener('DOMContentLoaded', () => {
 
                 document.querySelector('#todo-list').onsubmit = () => {
 
                     const li = document.createElement('li');
                     li.innerHTML = document.querySelector('#task').value;
-
+                
+                
+                
                     document.querySelector('#list').append(li);
 
                     document.querySelector('#task').value ='';
-
+                   
                     return false;
+                
+                
                 };
 
             });
@@ -28,7 +33,7 @@
             <input type="submit">
         </form>
         <h1>To Do List</h1>
-        <ul id="list" type="circle">
+        <ul id="list">
         </ul>
     </body>
 </html>
