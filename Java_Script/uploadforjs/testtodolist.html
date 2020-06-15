@@ -29,8 +29,9 @@
         
        
         <form id="todo-list">
-            <input id="task" autocomplete="off" autofocus placeholder="Add todo-task" type="text">
-            <input type="submit">
+            <input id="task" autocomplete="off" autofocus placeholder="Add todo-task" type="text"
+            onkeyup="if(this.value.length > 0) document.getElementById('disable').disabled = false; else document.getElementById('start_button').disabled = true;">
+            <input type="submit" id="disable" disabled>
         </form>
         <h1>To Do List</h1>
         <ul id="list">
