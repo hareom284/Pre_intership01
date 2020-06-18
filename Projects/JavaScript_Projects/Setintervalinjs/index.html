@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dyanamic Clock Using SetInterval</title>
+</head>
+<body>
+<h1 id="getTime" style="font-size: 30px"></h1>
+
+</body>
+<script >
+	var a= setInterval(function()
+		{
+          var time    = new Date();
+	      var getTime =time.toLocaleTimeString();
+           document.getElementById('getTime').innerHTML=getTime;
+		},1000);
+	
+</script>
+</html>

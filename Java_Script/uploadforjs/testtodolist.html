@@ -2,22 +2,33 @@
 <html>
     <head>
         <script>
-                
+            function dis()
+            {
+                document.getElementById('disable').disabled=false;
+            }
             document.addEventListener('DOMContentLoaded', () => {
 
-                document.querySelector('#todo-list').onsubmit = () => {
-
+                      document.querySelector('#todo-list').onsubmit = () => {
+                      var val= document.getElementById('task').value;
+                    if(val!=' ')
+                    {
+                    document.getElementById('disable').disabled=false;
                     const li = document.createElement('li');
-                    li.innerHTML = document.querySelector('#task').value;
+                    li.innerHTML = val;
                 
                 
                 
                     document.querySelector('#list').append(li);
 
-                    document.querySelector('#task').value ='';
-                   
+                    
+                   val =' ';
                     return false;
-                
+                    }
+                    else
+                    {
+                        document.getElementById('disable').disabled=true;
+                        return false;
+                    }
                 
                 };
 
@@ -29,9 +40,8 @@
         
        
         <form id="todo-list">
-            <input id="task" autocomplete="off" autofocus placeholder="Add todo-task" type="text"
-            onkeyup="if(this.value.length > 0) document.getElementById('disable').disabled = false; else document.getElementById('start_button').disabled = true;">
-            <input type="submit" id="disable" disabled>
+            <input id="task" autocomplete="off"  autofocus placeholder="Add todo-task" type="text">
+            <input type="submit" id="disable">
         </form>
         <h1>To Do List</h1>
         <ul id="list">
