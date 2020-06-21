@@ -1,80 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Love Calculator</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
     <style>
-    body
-    {
-        background-image: url('https://qph.fs.quoracdn.net/main-qimg-ea1eb84253a5adbab0c1b9bd57c1224c');
-        background-repeat: no-repeat;
-        width: 100%;
-        height: 100vh;
-        position: relative;
-        background-size:cover;
-        background-position: center;
-    }
-    .card
-    {
-        width: 40%;
-        margin: auto;
-        
-    }
-    header
-    {
-        top: 40%;
-        left:40% ;
-        transform: translate(-40%,-40%);
-        position:absolute;
-        width: 100%;
-        height: 300px;
-    }
-    .ml-40
-    {
-        margin-left: 40%;
-        width: 50px;
-    }
+        body {
+            background-image: url('bg.gif');
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 100vh;
+            position: relative;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .card {
+            width: 40%;
+            margin: auto;
+
+        }
+
+        header {
+            top: 40%;
+            left: 40%;
+            transform: translate(-40%, -40%);
+            position: absolute;
+            width: 100%;
+            height: 300px;
+        }
+
+        .ml-40 {
+            margin-left: 40%;
+            width: 50px;
+        }
     </style>
 </head>
+
 <body>
     <header>
-        <div class="card">
-            <div class="card-header text-center">Love Calculator</div>
-            <div class="card-body">
-                <div class="form-inline">
-                  <div class="form-group">
-                      <input type="text" placeholder="Your Name" class="form-control">
-                  </div>
-                  <div><span class="pl-2 pr-2">+</span></div>
-                  <div class="form-group">
-                    <input type="text" placeholder="Crush Name" class="form-control">
-                </div>
-                <br><br><br>
-                 <div class="m-auto">
-                    <input type="button" class="btn btn-success" value="Click Here" onclick="calculate()">
-                 </div>
-                </div>
-                <br>
-                 <div class="ml-40">
-                     <input type="text" placeholder="percentage" style="width: 100px;" class="form-control" id="lovecalue">
-                 </div>
-               
-                
-            </div>
-            <div class="card-footer text-center">Good Bless Your Relatioship</div>
-        </div>
+        <div class="container">
+            <div class="col">
 
+                <div class="card-header " style="margin-left: 70px;color: royalblue;">Love Calculator</div>
+                <div class="card-body">
+                    <div class="form-inline">
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" class="form-control" id="name">
+                            <small id="emailHelp" class="form-text text-muted">
+                                else.</small>
+
+                        </div><br><br><br>
+                        <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                                class="pl-5"><img src="download .png" width="40px" height="40px"></div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Crush Name" class="form-control" id="crush">
+                            <small id="email" class="form-text ">text</small>
+
+                        </div>
+                        <br><br><br>
+                        <div class="" style="margin-left: 70px;">
+                            <input type="button" class="btn btn-primary" value="Click Here" onclick="calculate()">
+                        </div>
+                    </div>
+                    <br>
+                    <div style="margin-left: 20px;">
+                        <input type="text" placeholder="percentage" style="width: 200px;" class="form-control"
+                            id="lovecalue">
+                    </div>
+
+
+                </div>
+
+                <div class="card-footer text-center text-primary">Good Bless Your Relatioship</div>
+            </div>
+        </div>
     </header>
     <script>
-        function calculate()
-        {
-        var lovevalue = Math.random()*100;
-        lovevalue=Math.floor(lovevalue);
-        document.getElementById('lovecalue').value=lovevalue+"%";
+        function calculate() {
+
+            var hare = document.getElementById('name').value;
+            var om = document.getElementById('crush').value;
+            if (hare =="") {
+              alert("Please Enter Your Name")
+            }
+            else if (om == "") {
+                alert('Please Enter Your Crush Name');
+            }
+            else if(hare.charAt(0)==1)
+            {
+             alert("Please Enter Valid Name")
+            }
+            else
+            {
+                var lovevalue = Math.random() * 100;
+                lovevalue = Math.floor(lovevalue);
+                document.getElementById('lovecalue').value = lovevalue + "%";
+            }
+
         }
     </script>
 </body>
+
 </html>
