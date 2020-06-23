@@ -24,12 +24,12 @@
           <label for="gender" class="col-sm-2 col-form-label">Gender</label>
           <div class="col-sm-10">
             <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" value="male">
+                <input class="gender" type="radio" name="gen" value="male"  checked>
                 <label class="form-check-label" for="exampleRadios2">
                   Male
                 </label>
                 &nbsp;&nbsp;&nbsp;
-                <input class="form-check-input" type="radio"   value="female">
+                <input class="gender" type="radio" name="gen"   value="female">
                 <label class="form-check-label" for="exampleRadios2">
                   Female
                 </label>
@@ -94,7 +94,7 @@
         </div>
         <br>
         <div class="col">
-        <button type="button" class="btn  btn-info btn-lg" >Calculate Your Calorie</button>
+        <button type="button" class="btn  btn-info btn-lg" onclick="fun()">Calculate Your Calorie</button>
         </div>
       </form>
       <br>
@@ -107,8 +107,12 @@
       </div>
 </div>
 </div>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<script>
+  function fun()
+  {
+  var radio = document.getElementsByClassName("gender").value;
+  console.log(radio);
+  }
+</script>
 </body>
 </html>
