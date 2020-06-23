@@ -1,12 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ludo Game</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+        integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+    <style>
+        body
+        {
+            font-family: 'Tangerine', serif;font-size: 48px;color:white;
+            background-color: #2C001E;
+        }
+        
+    </style>
+
 </head>
-<body>
-    
+
+<body >
+    <div class="row ml-3">
+        <div class="h1 text-center " id="h1" style=" font-family: 'Tangerine', serif;font-size: 48px;color: wheat;
+">Ludo Game</div>
+        <div class="col-lg-4 col-sm-10">
+            <p class="text-center h3">Player 1</p>
+            <img src="images/1.jpeg" id="change1">
+
+        </div>
+        <div class="col-lg-4 col-sm-10">
+            <p class="text-center h3">Player 2</p>
+            <img src="images/1.jpeg" id="change2">
+        </div>
+        <button type="button" class="btn btn-primary btn-lg"
+            style="width: 80px;height: 40px;margin-top: 10px;margin-left: 100px;" onclick="fun()">Play</button>
+
+    </div>
+    <script>
+        function fun()
+        {
+        const random= Math.floor(Math.random() *6 +1);
+        var img = `images/${random}.jpeg`;
+        document.getElementById('change1').setAttribute('src',img);
+        const random1= Math.floor(Math.random() *6 +1);
+        var img = `images/${random1}.jpeg`;
+        document.getElementById('change2').setAttribute('src',img);
+        if( random>random1)
+        {
+            document.getElementById('h1').innerHTML="Player 1 Win"
+        }
+        else if(random<random1)
+        {
+            document.getElementById('h1').innerHTML="Player 2 Win"
+        }
+        else
+        {
+            document.getElementById('h1').innerHTML="Game draw"
+        }
+        }
+    </script>
+
 </body>
+
 </html>
