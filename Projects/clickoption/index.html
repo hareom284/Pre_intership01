@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>jQuery Show Hide Elements Using Radio Buttons</title>
+    <style>
+        .box {
+            color: #fff;
+            padding: 20px;
+            display: none;
+            margin-top: 20px;
+        }
+
+        .red {
+            background: #ff0000;
+        }
+
+        .green {
+            background: #228B22;
+        }
+
+        .blue {
+            background: #0000ff;
+        }
+    </style>
+   
+    <script>
+        $(document).ready(function () {
+            $('input[type="radio"]').click(function () {
+                var inputValue = $(this).attr("value");
+                var targetBox = $("." + inputValue);
+                $(".box").not(targetBox).hide();
+                $(targetBox).show();
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div>
+        <label><input type="radio" name="colorRadio" value="red"> red</label>
+        <label><input type="radio" name="colorRadio" value="green"> green</label>
+        <label><input type="radio" name="colorRadio" value="blue"> blue</label>
+    </div>
+    <div class="green box"><div class="form-group ">
+        <label class="control-label col-md-2" for="mname">Name*</label>
+            <div class="controls col-md-4">
+               <input name="fname" type="text" id="mname" class="form-control form-control-inline col-md-4"  >
+               <?php if(!empty($mname_error)) :?>
+               <span class="help-inline"><?php echo $mname_error ?></span>  
+               <?php endif;?>            
+            </div>
+            
+    </div>
+    
+    <br>
+    <div class="form-group ">
+        <label class="control-label col-md-2" for="email">Email*</label>
+            <div class="controls col-md-4">
+               <input name="email" type="text" id="memail" class="form-control form-control-inline col-md-4"  >
+               <?php if(!empty($memail_error)) :?>
+               <span class="help-inline"><?php echo $memail_error ?></span>  
+               <?php endif;?>             
+            </div>
+    </div>
+    <br>
+    <div class="form-group ">
+        <label class="control-label col-md-2" for="fnationality">Nationality</label>
+            <div class="controls col-md-4">
+               <input name="fnationality" type="text" id="mnationality" class="form-control form-control-inline col-md-4"  >
+                            
+            </div>
+            <label class="control-label col-md-2" for="fcitizen">Citizenship*</label>
+            <div class="controls col-md-4">
+               <input name="fcitizen" type="text" id="mcitizen" class="form-control form-control-inline col-md-4"  >
+               <?php if(!empty($mcitizen_error)) :?>
+               <span class="help-inline"><?php echo $mcitizen_error ?></span>  
+               <?php endif;?>             
+            </div>
+    </div>
+    <br>
+    <div class="form-group ">
+        <label class="control-label col-md-2" for="status">Status</label>
+            <div class="controls col-md-4">
+            <label class="radio-inline"><input type="radio" name="mstatus" id="mliving" checked>Living</label>
+            <label class="radio-inline"><input type="radio" name="mstatus" id="mdecese">Decese</label>
+                            
+            </div>
+    </div>
+    <br>
+    <div class="form-group">
+        <label class="control-label col-md-2" for="fage">Age</label>
+        <div class="controls col-md-4">
+               <input name="fage" type="text" id="fage" class="form-control form-control-inline col-md-4"  >
+                            
+            </div>  
+    </div>
+    <br>
+    <div class="form-group">
+        <label class="control-label col-md-2" for="foccupation">Occuputation</label>
+        <div class="controls col-md-4">
+               <input name="foccupation" type="text" id="foccupation" class="form-control form-control-inline col-md-4"  >
+                            
+            </div>  
+            <label class="control-label col-md-2" for="fposition">Position</label>
+        <div class="controls col-md-4">
+               <input name="fposition" type="text" id="fposition" class="form-control form-control-inline col-md-4"  >
+                            
+            </div> 
+    </div>
+    <br><br>
+    <div class="form-check">
+        <label class="control-label col-md-2" for="faddress">Mother's address</label>
+        <div class="controls col-md-4">
+               <input name="faddress" type="checkbox" id="faddress" class="form-check-input form-control-inline col-md-4"  >
+               <label class="form-check-label" for="faddress">Same as applicant's address</label>           
+        </div>  
+    </div>
+    <br><br>
+    <div class="form-group">
+        <label class="control-label col-md-2" for="street">Street</label>
+        <div class="controls col-md-4">
+               <input name="street" type="text" id="street" class="form-control form-control-inline col-md-4"  >
+                            
+            </div>  
+    </div>
+    <br>
+    <div class="form-group">
+        <label class="control-label col-md-2" for="township">Township*</label>
+        <div class="controls col-md-4">
+               <input name="township" type="text" id="mtownship" class="form-control form-control-inline col-md-4"  >
+               <?php if(!empty($mtownship_error)) :?>
+               <span class="help-inline"><?php echo $mtownship_error ?></span>  
+               <?php endif;?>       
+            </div> 
+            <label class="control-label col-md-2" for="city">City</label>
+        <div class="controls col-md-4">
+               <input name="city" type="text" id="mcity" class="form-control form-control-inline col-md-4"  >
+               <?php if(!empty($mcity_error)) :?>
+               <span class="help-inline"><?php echo $mcity_error ?></span>  
+               <?php endif;?>               
+        </div>  
+    </div>
+    <br>
+    <div class="form-group ">
+        <label class="control-label col-md-2" for="zipcode">Zip Code</label>
+            <div class="controls col-md-4">
+               <input name="zipcode" type="text" id="zipcode" class="form-control form-control-inline col-md-4"  >
+                            
+            </div>
+            
+    </div>
+    <br>
+    <div class="form-group">
+        <label class="control-label col-md-2" for="township">Telephone</label>
+        <div class="controls col-md-4">
+               <input name="telephone" type="text" id="telephone" class="form-control form-control-inline col-md-4"  >
+                            
+            </div> 
+            <label class="control-label col-md-2" for="mobile">Mobile*</label>
+        <div class="controls col-md-4">
+               <input name="mobile" type="text" id="mmobile" class="form-control form-control-inline col-md-4"  >
+               <?php if(!empty($mmobile_error)) :?>
+               <span class="help-inline"><?php echo $mmobile_error ?></span>  
+               <?php endif;?>         
+        </div>  
+    </div>    </div>
+    
+</body>
+
+</html>
